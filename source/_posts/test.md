@@ -5,6 +5,7 @@ math: true
 date: 2019-10-10 10:00:00
 comment: 'disqus'
 mermaid: true
+index_img: /img/index.jpg
 ---
 
 <b style='color:#ff6b81'><font size = 4>tuple结构</font></b>
