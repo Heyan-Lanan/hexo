@@ -1,6 +1,6 @@
 ---
-title: 标题
+title: 关于凝雨
 layout: about
 ---
 
-这里写关于页的正文，支持 Markdown, HTML
+一名USTC-CS学生
