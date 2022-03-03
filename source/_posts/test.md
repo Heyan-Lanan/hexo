@@ -148,3 +148,19 @@ $max_{x\in A_i}(x)=f(i-1,1)=\dfrac{(i-2)(i-1)}{2}+i-1=\dfrac{1}{2}(i^2-i)=\dfrac
 $$
 max_{x\in A_i}(x)=f(i-1,1)=\dfrac{(i-2)(i-1)}{2}+i-1=\dfrac{1}{2}(i^2-i)=\dfrac{(i-1)i}{2}+1-1=f(1,i)-1=min_{x\in A_{i+1}(x)}-1
 $$
+
+$$
+f\left(x\right) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
+$$
+
+```c++
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
