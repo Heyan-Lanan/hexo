@@ -740,7 +740,7 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: 'waline-one-liard.vercel.app'
+  serverURL: 'https://waline-one-liard.vercel.app'
   path: window.location.pathname
   placeholder: 有什么想对我说的~
   meta: ['nick', 'mail', 'link']
