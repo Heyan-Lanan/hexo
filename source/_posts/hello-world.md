@@ -2,7 +2,7 @@
 title: Hello World
 math: true
 date: 2019-10-10 10:00:00
-comment: 'disqus'
+comment: 'waline'
 index_img: /img/index.jpg
 ---
 

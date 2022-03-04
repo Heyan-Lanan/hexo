@@ -3,7 +3,7 @@
 title: 测试
 math: true
 date: 2019-10-10 10:00:00
-comment: 'disqus'
+comment: 'waline'
 mermaid: true
 index_img: /img/index.jpg
 ---
