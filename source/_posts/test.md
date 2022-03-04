@@ -1,18 +1,17 @@
 ---
+
 title: 测试
 math: true
 date: 2019-10-10 10:00:00
 comment: 'waline'
 mermaid: true
 index_img: /img/index.jpg
-
 ---
 
 <b style='color:#ff6b81'><font size = 4>tuple结构</font></b>
 
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -26,10 +25,8 @@ index_img: /img/index.jpg
 </div>
 
 
-
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -45,10 +42,8 @@ index_img: /img/index.jpg
 </div>
 
 
-
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -64,10 +59,8 @@ index_img: /img/index.jpg
 </div>
 
 
-
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -82,7 +75,6 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -95,7 +87,6 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -110,7 +101,6 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -123,7 +113,6 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -136,7 +125,6 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -149,7 +137,6 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
-
 
 
 ```
@@ -195,18 +182,17 @@ Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
 
-<p class="note note-primary">标签</p>
-<p class="note note-secondary">标签</p>
-<p class="note note-success">标签</p>
-<p class="note note-danger">标签</p>
-<p class="note note-warning">标签</p>
-<p class="note note-info">标签</p>
-<p class="note note-light">标签</p>
+<p class="note note-primary">primary</p>
+<p class="note note-secondary">secondary</p>
+<p class="note note-success">success</p>
+<p class="note note-danger">danger</p>
+<p class="note note-warning">warning</p>
+<p class="note note-info">info</p>
+<p class="note note-light">light</p>
 
 
 <details>
 <summary>点击查看代码</summary>
-
 
 ```
 <p class="note note-primary">标签</p>
@@ -214,16 +200,15 @@ Class08 <--> C2: Cool label
 
 </details>
 
-<span class="label label-primary">Label</span>
-<span class="label label-default">Label</span>
-<span class="label label-info">Label</span>
-<span class="label label-success">Label</span>
-<span class="label label-warning">Label</span>
-<span class="label label-danger">Label</span>
+<span class="label label-primary">primary</span>
+<span class="label label-default">default</span>
+<span class="label label-info">info</span>
+<span class="label label-success">success</span>
+<span class="label label-warning">warning</span>
+<span class="label label-danger">danger</span>
 
 <details>
 <summary>点击查看代码</summary>
-
 
 ```
 <span class="label label-primary">Label</span>
@@ -233,13 +218,20 @@ Class08 <--> C2: Cool label
 
 
 {% cb text, true, true %}
-
 <details>
 <summary>点击查看代码</summary>
-
 
 ```
 {% cb text, checked?, incline? %}
 ```
+</details>
 
+<a class="btn" href="ningyu.vip" title="ningyu.vip">凝雨的小站</a>
+
+<details>
+<summary>点击查看代码</summary>
+
+```
+<a class="btn" href="ningyu.vip" title="ningyu.vip">凝雨的小站</a>
+```
 </details>
