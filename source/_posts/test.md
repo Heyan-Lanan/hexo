@@ -226,12 +226,12 @@ Class08 <--> C2: Cool label
 ```
 </details>
 
-<a class="btn" href="ningyu.vip" title="ningyu.vip">凝雨的小站</a>
+<a class="btn" href="https://www.ningyu.vip/" title="ningyu.vip">凝雨的小站</a>
 
 <details>
 <summary>点击查看代码</summary>
 
 ```
-<a class="btn" href="ningyu.vip" title="ningyu.vip">凝雨的小站</a>
+<a class="btn" href="https://www.ningyu.vip/" title="ningyu.vip">凝雨的小站</a>
 ```
 </details>
