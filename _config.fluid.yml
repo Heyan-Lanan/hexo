@@ -685,7 +685,7 @@ utterances:
 # Based on third-party service
 # See: https://disqus.com
 disqus:
-  shortname: 
+  shortname:
   # https-www-ningyu-vip
   # 以下为 Disqusjs 支持, 国内用户如果想使用 Disqus 建议配合使用
   # The following are Disqusjs configurations, please ignore if DisqusJS is not required
@@ -947,6 +947,12 @@ links:
       intro: "lbc‘s Blog",
       link: "https://bc-li.github.io",
       avatar: "/img/lbc_Blog.jpg"
+    }
+    - {
+      title: "hereiszr.com",
+      intro: "zr‘s Blog",
+      link: "http://hereiszr.com/",
+      avatar: "/img/zr_Blog.jpg"      
     }
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
