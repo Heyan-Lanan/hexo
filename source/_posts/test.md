@@ -1,17 +1,18 @@
 ---
-
 title: 测试
 math: true
 date: 2019-10-10 10:00:00
 comment: 'waline'
 mermaid: true
 index_img: /img/index.jpg
+
 ---
 
 <b style='color:#ff6b81'><font size = 4>tuple结构</font></b>
 
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -25,8 +26,10 @@ index_img: /img/index.jpg
 </div>
 
 
+
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -42,8 +45,10 @@ index_img: /img/index.jpg
 </div>
 
 
+
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -59,8 +64,10 @@ index_img: /img/index.jpg
 </div>
 
 
+
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -75,6 +82,7 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -87,6 +95,7 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -101,6 +110,7 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -113,6 +123,7 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -125,6 +136,7 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -137,6 +149,7 @@ index_img: /img/index.jpg
 
 <details>
 <summary>点击查看代码</summary>
+
 
 
 ```
@@ -180,3 +193,53 @@ Class01 : size()
 Class01 : int chimp
 Class01 : int gorilla
 Class08 <--> C2: Cool label
+```
+
+<p class="note note-primary">标签</p>
+<p class="note note-secondary">标签</p>
+<p class="note note-success">标签</p>
+<p class="note note-danger">标签</p>
+<p class="note note-warning">标签</p>
+<p class="note note-info">标签</p>
+<p class="note note-light">标签</p>
+
+
+<details>
+<summary>点击查看代码</summary>
+
+
+```
+<p class="note note-primary">标签</p>
+```
+
+</details>
+
+<span class="label label-primary">Label</span>
+<span class="label label-default">Label</span>
+<span class="label label-info">Label</span>
+<span class="label label-success">Label</span>
+<span class="label label-warning">Label</span>
+<span class="label label-danger">Label</span>
+
+<details>
+<summary>点击查看代码</summary>
+
+
+```
+<span class="label label-primary">Label</span>
+```
+
+</details>
+
+
+{% cb text, true, true %}
+
+<details>
+<summary>点击查看代码</summary>
+
+
+```
+{% cb text, checked?, incline? %}
+```
+
+</details>
