@@ -235,3 +235,5 @@ Class08 <--> C2: Cool label
 <a class="btn" href="https://www.ningyu.vip/" title="ningyu.vip">凝雨的小站</a>
 ```
 </details>
+
+{% aplayer "大调" "官大为" "https://music.gaficat.com/%E5%A4%A7%E8%B0%83.mp3" %}
