@@ -239,3 +239,5 @@ Class08 <--> C2: Cool label
 {% meting "3986040" "netease" "song" "theme:#555" "mutex:true" "listmaxheight:340px" "preload:auto" %}
 
 {% meting "002Bz9YK1vUWCE" "tencent" "song" "theme:#555" "mutex:true" "listmaxheight:340px" "preload:auto" %}
+
+{% bilibili "aid:43218022" "quality:high" "danmaku:false" "allowfullscreen" %}
