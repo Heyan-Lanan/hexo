@@ -236,4 +236,4 @@ Class08 <--> C2: Cool label
 ```
 </details>
 
-{% meting "002nf0kI0YUPR9" "tencent" "song" "loop:none"  %}
+{% meting "3986040" "netease" "song" "theme:#555" "mutex:true" "listmaxheight:340px" "preload:auto" %}

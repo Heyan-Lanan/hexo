@@ -79,3 +79,6 @@ theme: fluid
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+aplayer:
+  meting: true
