@@ -236,4 +236,4 @@ Class08 <--> C2: Cool label
 ```
 </details>
 
-{% aplayer "大调" "官大为" "https://music.gaficat.com/%E5%A4%A7%E8%B0%83.mp3" %}
+{% meting "002nf0kI0YUPR9" "tencent" "song" "loop:none"  %}
