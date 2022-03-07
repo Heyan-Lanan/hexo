@@ -242,5 +242,20 @@ Class08 <--> C2: Cool label
 
 {% raw %}
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-<iframe src="//player.bilibili.com/player.html?aid=90978812&cid=155358422&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
+<iframe src="//player.bilibili.com/player.html?aid=90978812&cid=155358422&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
 {% endraw %}
+
+{% raw %}
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="//player.bilibili.com/player.html?aid=713984017&cid=155358422&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
+{% endraw %}
+
+
+<span class="label label-info">
+aid 视频ID 就是B站的av号
+cid 应该是客户端的id,clientid的缩写（推测） 测试表示不填也不会有什么问题
+page 第几个视频 也就是分P的 默认是1
+as_wide 是否宽屏 1：宽屏 0：小屏
+high_quality 视频质量 1：最高视频质量 0：最低视频质量
+danmaku 是否开启弹幕 1：开启（默认） 0：关闭
+</span>
