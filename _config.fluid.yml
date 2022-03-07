@@ -957,6 +957,24 @@ links:
       link: "http://hereiszr.com/",
       avatar: "/img/zr_Blog.jpg"
     }
+    - {
+      title: "加菲猫的创客工坊",
+      intro: "scarleast‘s Blog",
+      link: "https://www.gaficat.com/",
+      avatar: "/img/scarleast.jpg"
+    }
+    - {
+      title: "云炬网络",
+      intro: "天津云炬网络科技有限公司",
+      link: "https://yunjunet.cn/",
+      avatar: "/img/yunju.jpg"
+    }
+    - {
+      title: "Pipixia244",
+      intro: "srp‘s Blog",
+      link: "https://srpr.cc/",
+      avatar: "/img/srp_Blog.jpg"
+    }
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
   onerror_avatar: /img/avatar.png
