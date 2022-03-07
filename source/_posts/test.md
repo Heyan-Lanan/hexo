@@ -240,4 +240,7 @@ Class08 <--> C2: Cool label
 
 {% meting "002Bz9YK1vUWCE" "tencent" "song" "theme:#555" "mutex:true" "listmaxheight:340px" "preload:auto" %}
 
-{% bilibili "aid:43218022" "quality:high" "danmaku:false" "allowfullscreen" %}
+{% raw %}
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="//player.bilibili.com/player.html?aid=90978812&cid=155358422&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
+{% endraw %}
