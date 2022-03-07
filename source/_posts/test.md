@@ -251,11 +251,11 @@ Class08 <--> C2: Cool label
 {% endraw %}
 
 
-<span class="label label-info">
+<p class="note note-info">
 aid 视频ID 就是B站的av号
 cid 应该是客户端的id,clientid的缩写（推测） 测试表示不填也不会有什么问题
 page 第几个视频 也就是分P的 默认是1
 as_wide 是否宽屏 1：宽屏 0：小屏
 high_quality 视频质量 1：最高视频质量 0：最低视频质量
 danmaku 是否开启弹幕 1：开启（默认） 0：关闭
-</span>
+</p>
