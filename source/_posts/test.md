@@ -259,3 +259,21 @@ as_wide 是否宽屏 1：宽屏 0：小屏<br>
 high_quality 视频质量 1：最高视频质量 0：最低视频质量<br>
 danmaku 是否开启弹幕 1：开启（默认） 0：关闭
 </p>
+
+```latex
+% 导言区
+\documentclass{article} % book,report,letter(没有title)
+
+\title{My First Document}
+\author{ZSH}
+\date{\today}
+ 
+% 正文区
+\begin{document}
+    \maketitle % 生成title,author等信息
+    Hello world!
+
+    % 空一行可以换行                          
+    Let $f(x)$ be defined by the formula $f(x)=3x^2+x-1$ $$f(x)=3x^2+x-1$$ % 双$模式是行间数学公式
+\end{document}
+```
