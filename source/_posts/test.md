@@ -279,11 +279,12 @@ danmaku 是否开启弹幕 1：开启（默认） 0：关闭
 ```
 
 
+// 通过jsDelivr的CDN引入echarts
 <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
-<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-<div id="main" style="width: 600px;height:400px;"></div>
-<script type="text/javascript">
-  option = {
+// 使用GL里的各种组件时需要添加，否则可不需要
+<script src="https://cdn.jsdelivr.net/npm/echarts-gl@1.1.1/dist/echarts-gl.min.js"></script>
+{% echarts 400 '85%' %}
+option = {
   title: {
     text: 'Stacked Area Chart'
   },
@@ -379,4 +380,4 @@ danmaku 是否开启弹幕 1：开启（默认） 0：关闭
     }
   ]
 };
-</script>
+{% endecharts %}
