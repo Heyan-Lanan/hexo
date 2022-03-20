@@ -6,7 +6,6 @@ date:
 comments: false
 ---
 <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
-
 <style>
 @font-face{font-family:'LXGW WenKai';src:url('font/LXGWWenKai-Regular.woff2') format('woff2'),url('font/LXGWWenKai-Regular.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap}
 .links-content{margin-top:1rem}
@@ -31,11 +30,9 @@ comments: false
 .card .card-content a{font-style:normal;color:#222222;font-weight:500;text-decoration:none;border:0;overflow:hidden}
 .stars_h2{color:#000}
 </style>
-
 <h2 class="stars_h2"></h2>
 
 <div><div class="links-content"><div class="link-navigation mine"></div></div></div>
-
 <h2 class="stars_h2">测试</h2>
 
 <div><div class="links-content"><div class="link-navigation test"></div></div></div>
