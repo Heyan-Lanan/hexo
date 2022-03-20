@@ -6,7 +6,7 @@ comments: false
 ---
 <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
 <style>
-@font-face{font-family:'LXGW WenKai';src:url('./font/LXGWWenKai-Regular.woff2') format('woff2'),url('./font/LXGWWenKai-Regular.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap}
+@font-face{font-family:'LXGW WenKai';src:url('https://cdn.jsdelivr.net/gh/jinghu-moon/Blog_Static_Files@main/font/LXGWWenKai-Regular.woff2') format('woff2'),url('https://cdn.jsdelivr.net/gh/jinghu-moon/Blog_Static_Files@main/font/LXGWWenKai-Regular.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap}
 .links-content{margin-top:1rem}
 .link-navigation::after{content:" ";display:block;clear:both}
 .card{position:relative;width:25%;padding:0;border-radius:10px;transition-duration:.3s;margin-bottom:1.5rem;margin-left:16px;display:block;float:left;box-shadow:0 0 6px 1px rgb(0 0 0 / 10%);background:transparent;overflow:hidden;border:none !important;padding:10px !important;padding-bottom:0 !important}
