@@ -5,7 +5,6 @@ date:
 comments: false
 ---
 <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/jinghu-moon/jinghu-moon.github.io@main/js/bookmarks.js"></script>
 <style>
 @font-face{font-family:'LXGW WenKai';src:url('./font/LXGWWenKai-Regular.woff2') format('woff2'),url('./font/LXGWWenKai-Regular.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap}
 .links-content{margin-top:1rem}
