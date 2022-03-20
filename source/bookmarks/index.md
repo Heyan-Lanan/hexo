@@ -33,6 +33,3 @@ comments: false
 <h2 class="stars_h2"></h2>
 
 <div><div class="links-content"><div class="link-navigation mine"></div></div></div>
-<h2 class="stars_h2">测试</h2>
-
-<div><div class="links-content"><div class="link-navigation test"></div></div></div>
