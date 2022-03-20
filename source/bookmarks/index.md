@@ -1,6 +1,5 @@
 ---
-title:
-  '[object Object]': null
+title: 我的书签
 date:
   '[object Object]': null
 comments: false
