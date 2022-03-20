@@ -38,4 +38,4 @@ stars = {
   }
   
   // 传入json文件的路径
-  stars.init('../allbookmarks.json')
+  stars.init('https://cdn.jsdelivr.net/gh/jinghu-moon/jinghu-moon.github.io@main/allbookmarks.json')
