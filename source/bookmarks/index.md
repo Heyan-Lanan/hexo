@@ -30,6 +30,6 @@ comments: false
 .card .card-content a{font-style:normal;color:#222222;font-weight:500;text-decoration:none;border:0;overflow:hidden}
 .stars_h2{color:#000}
 </style>
-<h2 class="stars_h2"></h2>
+<h2 class="stars_h2"> </h2>
 
 <div><div class="links-content"><div class="link-navigation mine"></div></div></div>
