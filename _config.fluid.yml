@@ -206,7 +206,7 @@ custom_js:
   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/timeDate.js # 运行时间
   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/qipao.js #头部上升气泡
   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js # 动态彩带
-  - /js/bookmarks.js
+  - //cdn.jsdelivr.net/gh/jinghu-moon/jinghu-moon.github.io@main/js/bookmarks.js
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
@@ -1081,3 +1081,4 @@ mmedia:
     flv_cdn: https://cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js
     webtorrent_cdn: https://cdn.jsdelivr.net/npm/webtorrent/webtorrent.min.js
     default:
+    
