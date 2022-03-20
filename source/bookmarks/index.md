@@ -5,6 +5,7 @@ date:
 comments: false
 ---
 <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/jinghu-moon/jinghu-moon.github.io@main/js/bookmarks.js"></script>
 <style>
 @font-face{font-family:'LXGW WenKai';src:url('./font/LXGWWenKai-Regular.woff2') format('woff2'),url('./font/LXGWWenKai-Regular.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap}
 .links-content{margin-top:1rem}
@@ -36,3 +37,121 @@ comments: false
 
 <div><div class="links-content"><div class="link-navigation mine"></div></div></div>
 
+<div>
+    <div class="links-content">
+        <div class="link-navigation mine">
+            <div class="card" onclick="window.open('https://console.upyun.com/dashboard/')">
+                <div class="card-header">
+                    <div>又拍云</div>
+                </div>
+                <div class="card-content">
+                    <div>免费提供 CDN 加速和云存储服务</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://console.cloud.tencent.com/')">
+                <div class="card-header">
+                    <div>腾讯云</div>
+                </div>
+                <div class="card-content">
+                    <div>域名、服务器购买，DNS 解析，网站备案。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://vercel.com/dashboard')">
+                <div class="card-header">
+                    <div>vercel</div>
+                </div>
+                <div class="card-content">
+                    <div>CDN 加速，备用。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://github.com/')">
+                <div class="card-header">
+                    <div>Github</div>
+                </div>
+                <div class="card-content">
+                    <div>全球最大的代码托管平台。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://docsmall.com/image-compress')">
+                <div class="card-header">
+                    <div>docsmall</div>
+                </div>
+                <div class="card-content">
+                    <div>图片压缩，支持 jpg、png 格式。主用。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('http://color.oulu.me/')">
+                <div class="card-header">
+                    <div>渐变色</div>
+                </div>
+                <div class="card-content">
+                    <div>180 种渐变色，可复制 CSS 代码，下载渐变色图片。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://imgupscaler.com/')">
+                <div class="card-header">
+                    <div>Image Upscaler</div>
+                </div>
+                <div class="card-content">
+                    <div>人工智能技术放大图片，肉眼基本看不出区别。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://www.iconfont.cn/')">
+                <div class="card-header">
+                    <div>阿里巴巴矢量图标库</div>
+                </div>
+                <div class="card-content">
+                    <div>图标非常多，支持 CSS、JS 引用，支持多种格式下载。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://imyshare.com/')">
+                <div class="card-header">
+                    <div> iMyShare</div>
+                </div>
+                <div class="card-content">
+                    <div>精品实用网络资源导航，我愿称之为全网最强导航。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://www.appinn.com/')">
+                <div class="card-header">
+                    <div>小众软件</div>
+                </div>
+                <div class="card-content">
+                    <div>分享免费、小巧、实用、有趣、绿色的软件。软件控最爱。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://b3log.org/siyuan/')">
+                <div class="card-header">
+                    <div>思源笔记</div>
+                </div>
+                <div class="card-content">
+                    <div>一款本地优先的个人知识管理系统，支持完全离线使用，同时也支持端到端加密同步。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://zhutix.com/')">
+                <div class="card-header">
+                    <div>致美化</div>
+                </div>
+                <div class="card-content">
+                    <div>最专业的桌面美化交流平台，打造属于自己的 windows。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://www.bilibili.com/')">
+                <div class="card-header">
+                    <div>哔哩哔哩</div>
+                </div>
+                <div class="card-content">
+                    <div>娱乐、学习两不误，我在 B 站上大学。</div>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://gfsoso.soik.top/image.html')">
+                <div class="card-header">
+                    <div>九尾搜搜</div>
+                </div>
+                <div class="card-content">
+                    <div>结果来自谷歌图片，无须科学上网。搜涩图，很准！</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
