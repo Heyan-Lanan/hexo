@@ -70,5 +70,12 @@
         "site": "https://gfsoso.soik.top/image.html",
         "content": "结果来自谷歌图片，无须科学上网。搜涩图，很准！"
       }
+    ],
+    ".test": [
+        {
+          "nickname": "九尾搜搜",
+          "site": "https://gfsoso.soik.top/image.html",
+          "content": "结果来自谷歌图片，无须科学上网。搜涩图，很准！"
+        }
     ]
   }
