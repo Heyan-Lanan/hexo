@@ -59,6 +59,153 @@ tags: Echarts
 <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/echarts-gl@1.1.1/dist/echarts-gl.min.js"></script>
 {% echarts 400 '100%' %}
+option = {
+    title: {
+        text: 'ECharts 入门示例'  //标题
+    },
+    tooltip: {},
+    legend: {
+        data: ['销量']  //图例
+    },
+    xAxis: {
+        data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']  //x轴数据是类目型的
+    },
+    yAxis: {},
+    series: [
+        {
+            name: '销量',  //和前面的图例名字保持一致
+            type: 'bar',  //条形图bar chart
+            data: [5, 20, 36, 10, 10, 20]  //y轴数据
+        }
+    ]
+};
+{% endecharts %}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;我们可以实现多系列的柱状图，以及设置柱条之间的距离
+
+```js
+const option = {
+    xAxis: {
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {},
+    series: [
+        {
+            type: 'bar',
+            data: [23, 24, 18, 25, 27, 28, 25],
+            barGap: '20%',  //不同系列在同一类目下的距离
+            barCategoryGap: '40%'  //类目与类目的距离
+        },
+        {
+            type: 'bar',
+            data: [26, 24, 18, 22, 23, 20, 27]  //如果需要实现多系列的柱状图，只需要在 series 多添加一项就可以了
+        }
+    ]
+};
+```
+
+{% echarts 400 '100%' %}
+option = {
+    xAxis: {
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {},
+    series: [
+        {
+            type: 'bar',
+            data: [23, 24, 18, 25, 27, 28, 25],
+            barGap: '20%',  //不同系列在同一类目下的距离
+            barCategoryGap: '40%'  //类目与类目的距离
+        },
+        {
+            type: 'bar',
+            data: [26, 24, 18, 22, 23, 20, 27]  //如果需要实现多系列的柱状图，只需要在 series 多添加一项就可以了
+        }
+    ]
+};
+{% endecharts %}
+
+&nbsp;&nbsp;&nbsp;&nbsp;设置单个柱子的样式以及柱子的整体样式，注意单个柱子的样式的优先级高于整体。
+```js
+const option = {
+    xAxis: {
+        data: ['A', 'B', 'C', 'D', 'E']
+    },
+    yAxis: {},
+    series: [
+        {
+            type: 'bar',
+            data: [
+                10,
+                22,
+                28,
+                {
+                    value: 43,
+                    // 设置单个柱子的样式
+                    itemStyle: {
+                        color: '#91cc75',  //柱条的颜色
+                        shadowColor: '#cc7578',  //阴影颜色
+                        borderType: 'dashed',
+                        opacity: 0.5
+                    }
+                },
+                49
+            ],
+            itemStyle: {
+                barBorderRadius: 5,  //柱条圆角的半径
+                borderWidth: 1,  //柱条的描边宽度
+                borderType: 'solid',
+                borderColor: '#73c0de',  //柱条的描边颜色
+                shadowColor: '#5470c6',  //阴影颜色
+                shadowBlur: 3
+            }
+        }
+    ]
+};
+```
+
+{% echarts 400 '100%' %}
+option = {
+    xAxis: {
+        data: ['A', 'B', 'C', 'D', 'E']
+    },
+    yAxis: {},
+    series: [
+        {
+            type: 'bar',
+            data: [
+                10,
+                22,
+                28,
+                {
+                    value: 43,
+// 设置单个柱子的样式
+                    itemStyle: {
+                        color: '#91cc75',  //柱条的颜色
+                        shadowColor: '#cc7578',  //阴影颜色
+                        borderType: 'dashed',
+                        opacity: 0.5
+                    }
+                },
+                49
+            ],
+            itemStyle: {
+                barBorderRadius: 5,  //柱条圆角的半径
+                borderWidth: 1,  //柱条的描边宽度
+                borderType: 'solid',
+                borderColor: '#73c0de',  //柱条的描边颜色
+                shadowColor: '#5470c6',  //阴影颜色
+                shadowBlur: 3
+            }
+        }
+    ]
+};
+{% endecharts %}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;设置柱条宽度，柱条最小高度，柱条背景颜色。
+```js
 const option = {
     xAxis: {
         data: ['A', 'B', 'C', 'D', 'E']
@@ -77,4 +224,27 @@ const option = {
         }
     ]
 };
+```
+
+{% echarts 400 '100%' %}
+option = {
+    xAxis: {
+        data: ['A', 'B', 'C', 'D', 'E']
+    },
+    yAxis: {},
+    series: [
+        {
+            type: 'bar',
+            data: [10, 22, 28, 43, 49],
+            barWidth: '50%',  //柱条宽度
+            barMinHeight: '20',  //柱条最小高度
+            showBackground: true,  //背景颜色
+            backgroundStyle: {
+                color: 'rgba(213,124,124,0.8)'
+            }
+        }
+    ]
+};
 {% endecharts %}
+
+&nbsp;&nbsp;&nbsp;&nbsp;好了，现在你应该入门Echarts并学会简单的条形图的绘制了吧。
