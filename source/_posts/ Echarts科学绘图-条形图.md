@@ -56,6 +56,7 @@ tags: Echarts
 </html>
 ```
 
+<script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
 {% echarts 400 '100%' %}
     const option = {
         title: {
