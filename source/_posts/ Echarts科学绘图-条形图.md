@@ -56,21 +56,7 @@ tags: Echarts
 </html>
 ```
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>ECharts</title>
-    <!-- 引入刚刚下载的 ECharts 文件 -->
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/dist/echarts.js"></script>
-</head>
-<body>
-<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
-<div id="main" style="width: 600px;height:400px;"></div>
-<script type="text/javascript">
-    // 基于准备好的dom，初始化echarts实例
-    const myChart = echarts.init(document.getElementById('main'));
-    // 指定图表的配置项和数据
+{% echarts 400 '100%' %}
     const option = {
         title: {
             text: 'ECharts 入门示例'  //标题
@@ -91,11 +77,7 @@ tags: Echarts
             }
         ]
     };
-    // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
-</script>
-</body>
-</html>
+{% echarts %}
 
 &nbsp;&nbsp;&nbsp;&nbsp;我们可以实现多系列的柱状图，以及设置柱条之间的距离
 
@@ -120,17 +102,7 @@ const option = {
 };
 ```
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>ECharts</title>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/dist/echarts.js"></script>
-</head>
-<body>
-<div id="main" style="width: 600px;height:400px;"></div>
-<script type="text/javascript">
-    const myChart = echarts.init(document.getElementById('main'));
+{% echarts 400 '100%' %}
     const option = {
         xAxis: {
             data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
@@ -149,10 +121,7 @@ const option = {
             }
         ]
     };
-    myChart.setOption(option);
-</script>
-</body>
-</html>
+{% echarts %}
 
 &nbsp;&nbsp;&nbsp;&nbsp;设置单个柱子的样式以及柱子的整体样式，注意单个柱子的样式的优先级高于整体。
 ```js
@@ -193,17 +162,8 @@ const option = {
 };
 ```
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>ECharts</title>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/dist/echarts.js"></script>
-</head>
-<body>
-<div id="main" style="width: 600px;height:400px;"></div>
-<script type="text/javascript">
-    const myChart = echarts.init(document.getElementById('main'));
+
+{% echarts 400 '100%' %}
     const option = {
         xAxis: {
             data: ['A', 'B', 'C', 'D', 'E']
@@ -239,10 +199,7 @@ const option = {
             }
         ]
     };
-    myChart.setOption(option);
-</script>
-</body>
-</html>
+{% echarts '100%' %}
 
 &nbsp;&nbsp;&nbsp;&nbsp;设置柱条宽度，柱条最小高度，柱条背景颜色。
 ```js
