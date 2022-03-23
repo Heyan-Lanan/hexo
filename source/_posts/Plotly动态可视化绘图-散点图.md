@@ -9,13 +9,18 @@ categories: Python
 tags: Plotly
 ---
 
-可以设置三种模式，分别是<p class="note note-primary">mode='markers',#xtr1,散点图</p><p class="note note-primary">mode='lines',#xtr2,线形图</p><p class="note note-primary">mode='lines+markers',#xtr3,线形图+散点图组合</p>
+&nbsp;&nbsp;&nbsp;&nbsp;可以设置三种模式，分别是<p class="note note-primary">mode='markers',#xtr1,散点图</p><p class="note note-primary">mode='lines',#xtr2,线形图</p><p class="note note-primary">mode='lines+markers',#xtr3,线形图+散点图组合</p>
 
 ```python
-import plotly as py
-import plotly.graph_objs as go
+import chart_studio
+import chart_studio.plotly as py
+import plotly.graph_objects as go
 import numpy as np  # 产生随机数
-pyplt = py.offline.plot  # 预定义
+
+chart_studio.tools.set_credentials_file(
+    username='ningyu',
+    api_key='GFRRsIuXgMH0teXjCScZ'
+)
 
 N = 100
 random_x = np.linspace(0, 1, N)  # 生成 0-1 100个数字的均匀序列
@@ -44,20 +49,23 @@ trace2 = go.Scatter(
 )
 
 data = [trace0, trace1, trace2]
-pyplt(data, filename='tmp/scatter_basic_demo.html')
+py.plot(data, filename='scatter_basic_demo')
 ```
-<div align="center"><iframe width="800" height="600" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/5.embed"></iframe></div>
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/11.embed"></iframe>
 ​	还可以设置散点和线段的颜色和宽度，以及是否显示x，y方向的0刻度线。
 
 ```python
-import plotly as py
-import plotly.graph_objs as go
+import chart_studio
+import chart_studio.plotly as py
+import plotly.graph_objects as go
 import numpy as np
 
-pyplt = py.offline.plot
+chart_studio.tools.set_credentials_file(
+    username='ningyu',
+    api_key='GFRRsIuXgMH0teXjCScZ'
+)
 
 N = 500
-x = np.random.randn(N)
 
 trace0 = go.Scatter(
     x=np.random.randn(N),
@@ -93,5 +101,64 @@ layout = dict(title='Styled Scatter',
               )
 
 fig = dict(data=data, layout=layout)
-pyplt(fig, filename='tmp/scatter_style.html')
+py.plot(fig, filename='scatter_style')
 ```
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/13.embed"></iframe>
+
+&nbsp;&nbsp;&nbsp;&nbsp;利用pandas导入csv数据进行绘图
+
+```python
+import chart_studio
+import chart_studio.plotly as py
+import plotly.graph_objects as go
+import pandas as pd
+
+chart_studio.tools.set_credentials_file(
+    username='ningyu',
+    api_key='GFRRsIuXgMH0teXjCScZ'
+)
+
+df = pd.read_csv('Chapter02/dat/tk01_m15.csv')
+df9 = df[:10]
+print(df9)
+idx = df9['xtim']
+xd0 = (df9['close'] - 27) * 50
+df2 = df9.copy()
+df2['xd1'] = xd0 - 10
+df2['xd2'] = xd0
+df2['xd3'] = xd0 + 10
+print('df2\n', df2)
+
+xtr1 = go.Scatter(
+    x=idx,
+    y=df2['xd1'],
+    mode='markers',  # xtr1,散点图
+    name='xtr1-markers',
+)
+xtr2 = go.Scatter(
+    x=idx,
+    y=df2['xd2'],
+    mode='lines',  # xtr2,曲线图
+    name='xtr2-lines',
+)
+xtr3 = go.Scatter(
+    x=idx,
+    y=df2['xd3'],
+    mode='markers+lines',  # xtr3,曲线+散点组合
+    name='xtr3-markers+lines',
+)
+xdat = ([xtr1, xtr2, xtr3])
+layout = go.Layout(
+    title='收盘价--15分钟分时数据',
+    xaxis=go.layout.XAxis(tickangle=-15)  # 标签的角度
+
+)
+
+fig = go.Figure(data=xdat, layout=layout)
+py.plot(fig, filename=r'scatter_apply')
+
+print('ok')
+
+```
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/15.embed"></iframe>
