@@ -51,7 +51,7 @@ trace2 = go.Scatter(
 data = [trace0, trace1, trace2]
 py.plot(data, filename='scatter_basic_demo')
 ```
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/11.embed"></iframe>
+<iframe width="800" height="600" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/11.embed"></iframe>
 ​	还可以设置散点和线段的颜色和宽度，以及是否显示x，y方向的0刻度线。
 
 ```python
@@ -104,7 +104,7 @@ fig = dict(data=data, layout=layout)
 py.plot(fig, filename='scatter_style')
 ```
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/13.embed"></iframe>
+<iframe width="800" height="600" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/13.embed"></iframe>
 
 &nbsp;&nbsp;&nbsp;&nbsp;利用pandas导入csv数据进行绘图
 
@@ -161,4 +161,4 @@ py.plot(fig, filename=r'scatter_apply')
 print('ok')
 
 ```
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/15.embed"></iframe>
+<iframe width="800" height="600" frameborder="0" scrolling="no" src="//plotly.com/~ningyu/15.embed"></iframe>
