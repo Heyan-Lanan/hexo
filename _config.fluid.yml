@@ -446,7 +446,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: /img/index.jpg
+  banner_img: https://gitee.com/zshki/images/raw/master/%E5%A3%81%E7%BA%B8/Moment.jpg
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
