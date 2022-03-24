@@ -873,8 +873,8 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/index.jpg
-  banner_img_height: 60
+  banner_img: https://s1.328888.xyz/2022/03/24/9Mkpe.png
+  banner_img_height: 80
   banner_mask_alpha: 0.3
   subtitle:
   avatar: /img/头像.jpg
@@ -919,8 +919,8 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/index.jpg
-  banner_img_height: 60
+  banner_img: https://s1.328888.xyz/2022/03/24/9Mbyq.png
+  banner_img_height: 80
   banner_mask_alpha: 0.3
   subtitle:
   # 友链的成员项
