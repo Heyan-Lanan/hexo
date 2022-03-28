@@ -3,6 +3,9 @@ title: 我的书签
 date:
   '[object Object]': null
 comments: false
+banner_img: https://s1.328888.xyz/2022/03/28/J0oGM.png
+banner_img_height: 80
+banner_mask_alpha: 0.3
 ---
 <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
 <style>
