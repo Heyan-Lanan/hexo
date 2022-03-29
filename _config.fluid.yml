@@ -191,6 +191,11 @@ color:
   scrollbar_hover_color: "#a6a6a6"
   scrollbar_hover_color_dark: "#9da8b3"
 
+  # 随口胡说背景色
+  # Color of main board
+  talking_bg_color: "rgba(249, 250, 251, 1)"
+  talking_bg_color_dark: "rgba(55, 65, 81, 1)"
+
 # 主题字体配置
 # Font
 font:
@@ -329,6 +334,7 @@ navbar:
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
     - { key: "书签", link: "/bookmarks/", icon: "iconfont icon-bookmark-fill" }
+    - { key: "说说", link: "/talking/", icon: "iconfont icon-comment" }
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
 search:
@@ -878,7 +884,7 @@ about:
   banner_img: https://s1.328888.xyz/2022/03/24/9Mkpe.png
   banner_img_height: 80
   banner_mask_alpha: 0.3
-  subtitle: 
+  subtitle:
   avatar: /img/头像.jpg
   name: "凝雨"
   intro: "看尽长安花似锦 摘得梦里满天星"
@@ -1061,6 +1067,7 @@ static_prefix:
 
   hint: https://cdn.jsdelivr.net/npm/hint.css@2/
 
+  artitalk: https://cdn.staticaly.com/gh/spaceskynet/Artitalk/master/dist/js/
 
 mmedia:
   aplayer:
@@ -1080,3 +1087,20 @@ mmedia:
     flv_cdn: https://cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js
     webtorrent_cdn: https://cdn.jsdelivr.net/npm/webtorrent/webtorrent.min.js
     default:
+
+#---------------------------
+# 随口胡说页
+# Talking Page
+#---------------------------
+talking:
+  enable: true
+  banner_img: https://s1.328888.xyz/2022/03/24/9Mkpe.png
+  banner_img_height: 80
+  banner_mask_alpha: 0.3
+  subtitle:  说点什么吧
+  artitalk:
+    appId: N3lfViGlymDcAnEAyPKsorIC-MdYXbMMI
+    appKey: Om3PzE6MVnT9jKNhBckMfS4F
+    serverURL: https://n3lfvigl.api.lncldglobal.com
+    atComment: true # 是否开启说说评论
+    cssurl: https://cdn.staticaly.com/gh/spaceskynet/Artitalk/master/dist/css/artitalk.min.css # 魔改版本的 css
