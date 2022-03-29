@@ -1008,6 +1008,12 @@ links:
       link: "https://srpr.cc/",
       avatar: "/img/srp_Blog.jpg"
     }
+    - {
+      title: "Pomelo",
+      intro: "蜂蜜柚子茶的个人博客",
+      link: "https://mbwsfy0110.github.io/",
+      avatar: "https://s1.328888.xyz/2022/03/30/JaeSF.jpg"
+    }
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
   onerror_avatar: /img/avatar.png
