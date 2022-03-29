@@ -58,7 +58,7 @@ code:
       # Select a style in the link
       #  Github Gist
       # See: https://highlightjs.org/static/demo/
-      style: "Github Gist"
+      style: "rainbow"
 
       # 是否根据 style 改变代码背景色（如果 style 是深色背景别忘了开启此项）
       # If true, the code background will change color based on the style (If style has a dark background, don't forget to true)
@@ -215,6 +215,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css # 滚动条颜色
+  - /css/fluid-extension.css
 
 # 自定义 <head> 节点中的 HTML 内容
 # Customize <head> HTML content
@@ -1103,13 +1104,3 @@ mmedia:
     flv_cdn: https://cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js
     webtorrent_cdn: https://cdn.jsdelivr.net/npm/webtorrent/webtorrent.min.js
     default:
-
-reward_button:
-  enable: true
-  btn_icon: iconfont icon-love
-  btn_text: 赞赏
-  comment: 我很可爱，请给我钱！
-  qrcodes:
-    - src: https://s1.328888.xyz/2022/03/24/9Mkpe.png
-      caption: 微信
-      title: 微信赞赏码

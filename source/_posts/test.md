@@ -156,7 +156,7 @@ f\left(x\right) = \int_{-\infty}^\infty
     \,d\xi
 $$
 
-```c++
+```C++
 #include <iostream>
 
 int main() {
@@ -164,6 +164,8 @@ int main() {
     return 0;
 }
 ```
+
+
 
 ```mermaid
 classDiagram
@@ -181,6 +183,7 @@ Class01 : int chimp
 Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
+
 
 <p class="note note-primary">primary</p>
 <p class="note note-secondary">secondary</p>

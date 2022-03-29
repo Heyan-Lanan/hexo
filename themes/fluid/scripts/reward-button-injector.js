@@ -13,7 +13,7 @@ hexo.extend.injector.register('body_end', function () {
 
     return `
     <link defer rel="stylesheet" href="/css/reward-button.css"/>
-    <script src="/js/reward-button.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Heyan-Lanan/images@main/reward-button.js"></script>
     <script>
         new RewardButton({
             btnIcon: ${btn_icon ? `"${btn_icon}"` : "null"},
