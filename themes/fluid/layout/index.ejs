@@ -26,14 +26,12 @@ page.banner_mask_alpha = theme.index.banner_mask_alpha
           <%= post.title %>
         </a>
       </h1>
-
       <p class="index-excerpt">
         <a href="<%= post_url %>" target="<%- theme.index.post_url_target %>">
           <% var excerpt = post.description || post.excerpt || (theme.index.auto_excerpt.enable && post.content) %>
           <%- escape_html(strip_html(excerpt).substring(0, 200).trim()).replace(/\n/g, ' ') %>
         </a>
       </p>
-
       <div class="index-btm post-metas">
         <% if(theme.index.post_meta.date ) { %>
           <div class="post-meta mr-3">
@@ -65,4 +63,3 @@ page.banner_mask_alpha = theme.index.banner_mask_alpha
 <% }) %>
 
 <%- partial('_partial/paginator') %>
-

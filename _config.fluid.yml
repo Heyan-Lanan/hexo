@@ -455,7 +455,10 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://s1.328888.xyz/2022/03/24/9MX3A.jpg
+  banner_img:
+    video: https://cdn.jsdelivr.net/gh/Jin-Yuhan/WebAssetStorage@latest/videos/hutao.mp4
+    object_fit: cover
+    object_pos: 10% 10%
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image

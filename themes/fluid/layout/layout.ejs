@@ -1,10 +1,25 @@
-<%
-var subtitle = page.subtitle || page.title
+<% var subtitle = page.subtitle || page.title
 var banner_img = page.banner_img || theme.index.banner_img
 var banner_img_height = page.banner_img_height || theme.index.banner_img_height
 var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
 var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.default ? theme.dark_mode.default : ''
+
+var multi_banner = Array.isArray(banner_img)
+
+
+var video_banner = !multi_banner  && typeof banner_img !== 'string'
+
+
+
+var banner_parallax = theme.banner && theme.banner.parallax && 'parallax=true'
+var banner_style = (multi_banner || video_banner) ? ""
+  : `style="background: url('${url_for(banner_img)}') no-repeat center center; background-size: cover;"`
+
+// 别用 vh，IOS Safari 下很丑
+// 详见 https://blog.csdn.net/qq_40138556/article/details/122337874?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_paycolumn_v3&utm_relevant_index=2
+var banner_img_height_style = `style="height:${banner_img_height}%;"`
 %>
+
 
 <!DOCTYPE html>
 <html lang="<%= config.language %>" <%= colorSchema ? `data-default-color-scheme=${colorSchema}` : '' %>>
@@ -12,82 +27,98 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
 <%- partial('_partial/head') %>
 
 <body>
-  <header style="height: <%- banner_img_height %>vh;">
+<header class="pjax" <%- banner_img_height_style %>>
     <%- partial('_partial/nav') %>
-    <div class="banner" id="banner" <%- theme.banner && theme.banner.parallax && 'parallax=true' %>
-         style="background: url('<%- url_for(banner_img) %>') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, <%= parseFloat(banner_mask_alpha) %>)">
-          <div class="page-header text-center fade-in-up">
+    <div class="banner" id="banner" <%- banner_parallax %> <%- banner_style %>>
+        <div class="full-bg-img">
+            <div class="mask flex-center" style="background-color: rgba(0, 0, 0, <%= parseFloat(banner_mask_alpha) %>)">
+                <div class="page-header text-center fade-in-up">
             <span class="h2" id="subtitle" title="<%= subtitle %>">
-              <% if(!theme.fun_features.typing.enable) { %>
-                <%- subtitle %>
-              <% } %>
+                <% if(!theme.fun_features.typing.enable) { %>
+                    <%- subtitle %>
+                <% } %>
             </span>
 
-            <% if(is_post() && page.meta !== false) { %>
-              <%- partial('_partial/post-meta') %>
-            <% } %>
-          </div>
+                    <% if(is_post() && page.meta !== false) { %>
+                        <%- partial('_partial/post-meta') %>
+                    <% } %>
+                </div>
 
-          <% if (theme.scroll_down_arrow.enable && theme.scroll_down_arrow.banner_height_limit <= banner_img_height && page.layout !== '404') { %>
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
+                <% if (theme.scroll_down_arrow.enable && theme.scroll_down_arrow.banner_height_limit <= banner_img_height && page.layout !== '404') { %>
+                    <div class="scroll-down-bar">
+                        <i class="iconfont icon-arrowdown"></i>
+                    </div>
+                <% } %>
             </div>
-          <% } %>
         </div>
-      </div>
+
+        <% if (multi_banner) { %>
+            <div id="banner-images" <%- banner_img_height_style %>>
+                <% for(let i = 0; i < theme.banner.dynamic_loop.img_count; i++) { %>
+                    <% var img = (i >= banner_img.length) ? img_library[i % img_library.length] : banner_img[i] %>
+                    <div style="background-image: url('<%- img %>')"></div>
+                <% } %>
+            </div>
+        <% } else if (video_banner) { %>
+            <% var video_style = [
+                `object-fit:${banner_img.object_fit}`,
+                `-o-object-fit:${banner_img.object_fit}`,
+                `object-position:${banner_img.object_pos}`,
+                `-o-object-position:${banner_img.object_pos}`
+            ].join(';') %>
+            <video autoplay loop muted playsinline webkit-playsinline src="<%- theme.index.banner_img.video %>" style="<%- video_style %>"></video>
+        <% } %>
     </div>
-  </header>
+</header>
 
-  <main>
+<main>
     <% if(is_post() || page.layout === '404') { %>
-      <%- body %>
+        <%- body %>
     <% } else { %>
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          <%- banner_img_height >= 100 && theme.banner && theme.banner.parallax ? 'style=margin-top:0' : '' %>>
-          <% if(page.layout === 'about') { %>
-            <div class="about-avatar">
-              <img src="<%= url_for(theme.about.avatar) %>"
-                   class="img-fluid" alt="avatar">
+        <div class="container nopadding-x-md">
+            <div class="py-5" id="board"
+                    <%- banner_img_height >= 100 && theme.banner && theme.banner.parallax ? 'style=margin-top:0' : '' %>>
+                <% if(page.layout === 'about') { %>
+                    <div class="about-avatar">
+                        <img src="<%= url_for(theme.about.avatar) %>"
+                             class="img-fluid" alt="avatar">
+                    </div>
+                <% } %>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-10 m-auto">
+                            <%- body %>
+                        </div>
+                    </div>
+                </div>
             </div>
-          <% } %>
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                <%- body %>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     <% } %>
 
     <% if (theme.scroll_top_arrow.enable) { %>
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
+        <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+            <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+        </a>
     <% } %>
 
     <% if (theme.search.enable) { %>
-      <%- partial('_partial/search') %>
+        <%- partial('_partial/search') %>
     <% } %>
 
     <% if (theme.custom_html) { %>
-      <div class="col-lg-7 mx-auto nopadding-x-md">
-        <div class="container custom mx-auto">
-          <%- theme.custom_html %>
+        <div class="col-lg-7 mx-auto nopadding-x-md">
+            <div class="container custom mx-auto">
+                <%- theme.custom_html %>
+            </div>
         </div>
-      </div>
     <% } %>
-  </main>
+</main>
 
-  <%- partial('_partial/footer', { params: { subtitle: subtitle } }) %>
+<%- partial('_partial/footer', { params: { subtitle: subtitle } }) %>
 
-  <!-- SCRIPTS -->
-  <%- partial('_partial/scripts') %>
+<!-- SCRIPTS -->
+<%- partial('_partial/scripts') %>
 
 </body>
 </html>
+
