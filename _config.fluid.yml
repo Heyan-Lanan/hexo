@@ -458,7 +458,7 @@ index:
   banner_img:
     video: https://cdn.jsdelivr.net/gh/Jin-Yuhan/WebAssetStorage@latest/videos/hutao.mp4
     object_fit: cover
-    object_pos: 10% 10%
+    object_pos: 70% 50%
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
