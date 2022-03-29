@@ -82,3 +82,13 @@ deploy:
 
 aplayer:
   meting: true
+
+reward_button:
+  enable: true
+  btn_icon: iconfont icon-love
+  btn_text: 赞赏
+  comment: 我很可爱，请给我钱！
+  qrcodes:
+    - src: https://s1.328888.xyz/2022/03/24/9Mkpe.png
+      caption: 微信
+      title: 微信赞赏码
