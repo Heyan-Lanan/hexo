@@ -27,7 +27,21 @@ var banner_img_height_style = `style="height:${banner_img_height}%;"`
 <%- partial('_partial/head') %>
 
 <body>
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+          <div class="configure-border-1">
+            <div class="configure-core"></div>
+          </div>
+          <div class="configure-border-2">
+            <div class="configure-core"></div>
+          </div>
+          <div class="loading-word">加载中...</div>
+        </div>
+    </div>
 <header class="pjax" <%- banner_img_height_style %>>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/loading.min.css">
     <%- partial('_partial/nav') %>
     <div class="banner" id="banner" <%- banner_parallax %> <%- banner_style %>>
         <div class="full-bg-img">
@@ -118,7 +132,13 @@ var banner_img_height_style = `style="height:${banner_img_height}%;"`
 
 <!-- SCRIPTS -->
 <%- partial('_partial/scripts') %>
-
+<script>
+    var endLoading = function () {
+      document.body.style.overflow = 'auto';
+      document.getElementById('loading-box').classList.add("loaded");
+    }
+    window.addEventListener('load',endLoading);
+</script>
 </body>
 </html>
 
