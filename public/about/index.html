@@ -25,9 +25,8 @@
 <meta property="og:description" content="一名USTC-CS学生，常用语言C&#x2F;C++，python，Verilog以及XeTex，常用IDE：pycharm，CLion，VScode，Email：2149730257@qq.com，爱好比如原神和睡觉，是LOL和王者云玩家。本站基于Hexo-6.1.0博客框架 + fluid-1.8.14主题+Aliyun域名+cloudstudio云环境+vercel静态网站+cloudflar">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tape-client-file.oss-cn-hangzhou.aliyuncs.com/avatar/2021-10-01/03D98A963AA3BC5E7EF966EEA9504317.jpeg">
-<meta property="og:image" content="https://static.tapechat.net/h5Static/810a3571.svg">
 <meta property="article:published_time" content="2019-10-10T02:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-30T09:10:05.474Z">
+<meta property="article:modified_time" content="2022-03-30T09:17:46.416Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://tape-client-file.oss-cn-hangzhou.aliyuncs.com/avatar/2021-10-01/03D98A963AA3BC5E7EF966EEA9504317.jpeg">
@@ -344,42 +343,6 @@
             </div>
     </div>
 </div>
-<div class="bg_box" id="bg"></div>
-<div id="questionBox" :class="{min:!showTips}" v-cloak>
-    <div :class="{quesstyle:!showTips}" class="box-content"><p class="msg-waring" ref="waring" v-if="!showTips">
-        ⚠️提问箱仅用于接受正向反馈，或者是说点悄悄话。别用它欺负人，如果您向我们的用户发送骚扰信息，我们将禁止您使用提问箱，您的匿名提问消息也不会发送给对方。🌟🌟</p>
-        <div @click.prevent="switchTips" class="quiz" ref="quiz" :style="quizStyle" style="min-height:3.7rem">
-            <div class="cardbg" :style="cardStyle"></div>
-            <div class="hljs code-wrapper"><pre class="introduction" :class="{introductionmin:!showTips}" :style="cardTxtStyle" v-if="production"
-                 v-text="production"></pre></div>
-            <img v-if="showTips" class="box_arrow" src="https://static.tapechat.net/h5Static/810a3571.svg" srcset="/img/loading.gif" lazyload alt="">
-            <div v-show="!showTips" class="quiz-content"><textarea autofocus name="" id="textarea" rows="10"
-                                                                   maxlength="2000" @input.stop="input()"
-                                                                   placeholder="请在此处撰写您的问题" v-model="quizcon"
-                                                                   @click.stop></textarea>
-                <div class="quiz-button no_btn" @click.stop v-if="!canSend">发送</div>
-                <div class="quiz-button" @click.stop="postQuestionHandle" v-else>发送</div>
-            </div>
-        </div>
-        <p @click.prevent="switchTips" class="quiz-tips" v-if="showTips">点击此处向我匿名提问</p></div>
-    <div class="modal" v-if="verifyModal">
-        <div class="modal_box">
-            <div class="modal_title">提问受限</div>
-            <p class="modal_content">对方仅接受Tape注册用户的匿名提问，您需要先创建您的Tape账号，或联系提问箱主修改提问设置。</p>
-            <div class="modal_opt">
-                <button @click="verifyModal=false">放弃提问</button>
-                <button @click="gotoQuestion">仍要提问</button>
-            </div>
-        </div>
-    </div>
-    <div v-if="showTips" class="card-box" v-if="userInfo!=null">
-        <question-card :shadow="boxShadowStyle" @download="download" @title="回答过的问题" :total="total" :cards="cardList"
-                       :user="userInfo"></question-card>
-    </div>
-    <wechat-guide :select="select" @switch="select = false"></wechat-guide>
-    <div v-show="hideshow" class="jump_btn" title="" @click="download">制作我的Tape提问箱</div>
-    <div class="tost" v-show="tostBox"></div>
-</div>
 
   </div>
 
@@ -415,26 +378,6 @@
     </article>
   
 </article>
-
-
-
-<head><title>Tape小纸条-找同好，上小纸条</title>
-    <meta name="keywords" content="Tape小纸条,匿名提问,提问箱,popi,姐妹,树洞,悄悄话,追星,同好">
-    <meta name="description" content="找同好,上Tape。去中心化的兴趣交友社区，让你发现更大世界的不同。Tape你喜欢的才重要。">
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="wap-font-scale" content="no"/>
-    <script src="https://static.tapechat.net/h5Static/statistics.246c8a2c.js"></script>
-    <link rel="icon" href="https://static.tapechat.net/h5Static/favicon.ico">
-    <link href="https://static.tapechat.net/h5Static/questionBox.cddba325.css" rel="stylesheet">
-</head>
-
-<script src="https://static.tapechat.net/h5Static/flexible.71876e31.js"></script>
-<script src="https://static.tapechat.net/h5Static/questionBox.69c3027a.js"></script>
 
 
 

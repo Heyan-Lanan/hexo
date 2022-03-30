@@ -1015,6 +1015,12 @@ links:
       link: "https://mbwsfy0110.github.io/",
       avatar: "https://s1.328888.xyz/2022/03/30/JaeSF.jpg"
     }
+    - {
+      title: "brealid",
+      intro: "zy‘s Blog",
+      link: "https://www.brealid.cn/",
+      avatar: "https://s1.328888.xyz/2022/03/30/JNMEm.jpg"
+    }
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
   onerror_avatar: /img/avatar.png
