@@ -11,7 +11,7 @@ date: 2022-01-29 15:23:17
 <!-- 将apiurl改成你后端生成的api地址 -->
 <script type="text/javascript">
   var fdataUser = {
-    apiurl: 'https://hexo-circle-of-friends-delta.vercel.app/'
+    apiurl: 'https://hexo-circle-of-friends-git-main-heyan-lanan.vercel.app/'
   }
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lmm214/immmmm/themes/hello-friend/static/fcircle-beta.css">
