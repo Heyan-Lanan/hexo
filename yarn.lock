@@ -1023,6 +1023,11 @@
   dependencies:
     "hexo-pagination" "1.0.0"
 
+"hexo-history-calendar@^1.0.3":
+  "integrity" "sha512-XFSqUbOUEE8bwk8wmj0uyk3NIo5cI24YTBZaJDX7phvcANDFXuKWAHqqS4HlByAqeZiaDahS90pCdfjcNWPlYw=="
+  "resolved" "https://mirrors.tencent.com/npm/hexo-history-calendar/-/hexo-history-calendar-1.0.3.tgz"
+  "version" "1.0.3"
+
 "hexo-i18n@^1.0.0":
   "integrity" "sha512-yw90JHr7ybUHN/QOkpHmlWJj1luVk5/v8CUU5NRA0n4TFp6av8NT7ujZ10GDawgnQEdMHnN5PUfAbNIVGR6axg=="
   "resolved" "http://mirrors.tencent.com/npm/hexo-i18n/-/hexo-i18n-1.0.0.tgz"

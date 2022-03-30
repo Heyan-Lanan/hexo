@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="zh-CN" data-default-color-scheme=auto>
 
@@ -21,8 +22,8 @@
 <meta property="og:url" content="http://yoursite.com/talking/index.html">
 <meta property="og:site_name" content="凝雨">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-29T03:04:42.237Z">
-<meta property="article:modified_time" content="2022-03-29T03:04:42.237Z">
+<meta property="article:published_time" content="2022-03-29T03:52:43.101Z">
+<meta property="article:modified_time" content="2022-03-29T03:52:43.101Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -39,7 +40,7 @@
     
     
       
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/rainbow.min.css" />
     
   
 
@@ -63,6 +64,7 @@
 
   
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css">
+<link rel="stylesheet" href="/css/fluid-extension.css">
 
 
 
@@ -72,11 +74,25 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 6.1.0"></head>
+<!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head>
 
 
 <body>
-  <header style="height: 80vh;">
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+          <div class="configure-border-1">
+            <div class="configure-core"></div>
+          </div>
+          <div class="configure-border-2">
+            <div class="configure-core"></div>
+          </div>
+          <div class="loading-word">加载中...</div>
+        </div>
+    </div>
+<header class="pjax" style="height:80%;">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/loading.min.css">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -189,6 +205,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/fcircle/">
+                <i class="iconfont icon-friends"></i>
+                朋友圈
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -207,39 +235,39 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('https://s1.328888.xyz/2022/03/24/9Mkpe.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
+    <div class="banner" id="banner" parallax=true style="background: url('https://s1.328888.xyz/2022/03/24/9Mkpe.png') no-repeat center center; background-size: cover;">
+        <div class="full-bg-img">
+            <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+                <div class="page-header text-center fade-in-up">
             <span class="h2" id="subtitle" title="说点什么吧">
-              
+                
             </span>
 
-            
-          </div>
+                    
+                </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
                 
+                    <div class="scroll-down-bar">
+                        <i class="iconfont icon-arrowdown"></i>
+                    </div>
+                
+            </div>
+        </div>
+
+        
+    </div>
+</header>
+
+<main>
+    
+        <div class="container nopadding-x-md">
+            <div class="py-5" id="board"
+                    >
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-10 m-auto">
+                            
 
 <article class="markdown-body">
   
@@ -259,21 +287,21 @@ cssUrl: 'https://cdn.staticaly.com/gh/spaceskynet/Artitalk/master/dist/css/artit
 
 
 
-              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     
 
     
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
+        <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+            <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+        </a>
     
 
     
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+        <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
      aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
@@ -297,9 +325,9 @@ cssUrl: 'https://cdn.staticaly.com/gh/spaceskynet/Artitalk/master/dist/css/artit
     
 
     
-  </main>
+</main>
 
-  <footer class="text-center mt-5 py-3">
+<footer class="text-center mt-5 py-3">
   <div class="footer-content">
      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> </div> <span style="font-size: .85rem;line-height: 2;"> 本网站由 <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="_blank" rel="nofollow noopener"><svg t="1645161659001" class="icon" viewBox="0 0 4442 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1936" width="48" height="48"><path d="M1258.61548453-45.82215132c-22.90178928-22.90178928-52.34694652-39.26021062-81.79210521-52.34694651-22.90178928-13.08673737-49.07526254-6.54336796-62.16199844 13.0867359L937.99043601 150.47889885l-13.08673737 16.35842135c-19.63010531 26.17347327-49.07526254 39.26021062-81.79210375 39.26020915h-32.71684267c-91.60715713 3.27168397-179.94262883 49.07526254-235.56125933 124.32399983-45.80357857 58.89031445-65.43368387 134.13905173-65.43368387 206.11610208 0 13.08673737 9.81505191 26.17347327 22.90178927 29.44515724 26.17347327 13.08673737 42.5318946 35.98852518 45.80357858 65.43368389 9.81505191 42.5318946-19.63010531 85.06378772-62.16199992 94.87884112-45.80357857 13.08673737-91.60715713-13.08673737-104.69389303-55.61863049v-3.27168544c-6.54336796-26.17347327 0-49.07526254 16.35842134-68.70536641 9.81505191-9.81505191 13.08673737-26.17347327 13.08673588-39.2602106-6.54336796-94.87884111 19.63010531-193.02936621 78.52041977-268.27810202 71.97705183-94.87884111 183.21431429-153.76915557 304.26662868-153.76915558 22.90178928 0 42.5318946-13.08673737 55.61863049-29.44515871l163.58420897-215.93115401c9.81505191-13.08673737 6.54336796-32.71684119-6.54336794-42.5318946-3.27168397-3.27168397-6.54336796-3.27168397-9.81505341-6.54336942-274.82146994-81.79210375-579.08809861 16.35842133-755.75904346 251.91968214-238.83294478 310.80999662-179.94262883 755.75904348 130.86736775 994.59198826 29.44515724 19.63010531 62.16199991 42.5318946 91.60715569 62.16199844 19.63010531 9.81505191 45.80357857 6.54336796 62.16199991-13.0867359l176.67094484-238.83294478 13.08673738-16.35842133c19.63010531-26.17347327 49.07526254-39.26021062 81.79210375-39.26020915h35.98852517c91.60715713-3.27168397 179.94262883-49.07526254 232.28957684-124.32399836 45.80357857-58.89031445 68.70536787-134.13905173 65.43368388-206.11610357 0-13.08673737-9.81505191-26.17347327-19.6301053-29.44515721-26.17347327-13.08673737-45.80357857-35.98852518-45.80357858-65.43368391-9.81505191-42.5318946 16.35842133-85.06378772 62.16199991-94.87884111 45.80357857-13.08673737 91.60715713 13.08673737 104.69389305 55.61863196 3.27168397 26.17347327 0 49.07526254-19.63010533 68.70536639-9.81505191 9.81505191-13.08673737 26.17347327-13.0867359 39.26021064 9.81505191 94.87884111-19.63010531 189.75768224-75.24873727 268.27810199-71.97705183 94.87884111-183.21431429 153.76915557-304.26662718 153.7691556-22.90178928 0-42.5318946 13.08673737-55.61863049 29.44515868l-163.58420898 215.93115403c-9.81505191 13.08673737-6.54336796 32.71684119 6.54336795 42.53189458 3.27168397 3.27168397 6.54336796 3.27168397 9.81505339 6.54336797 284.63652335 85.06378772 588.90315054-16.35842133 765.5740954-255.19136465 219.20283948-314.08168058 157.04083955-755.75904348-153.76915559-994.59198826z m1171.26293314 193.02936622v-16.35842135c0-9.81505191-6.54336796-19.63010531-19.63010533-22.90178929H1850.79031903c-9.81505191 0-19.63010531 6.54336796-22.90178926 19.63010532v35.98852665c0 9.81505191 6.54336796 19.63010531 19.63010531 22.90178928h471.12252011c9.81505191 0 19.63010531 6.54336796 22.90178929 19.63010384v6.54336941c-26.17347327 150.49747162-88.33547317 291.1798913-186.48599678 408.96052171-3.27168397 9.81505191-16.35842133 9.81505191-26.17347325 0l-3.27168544-3.27168545c-75.2487358-98.1505251-127.59568233-209.38778755-153.7691556-330.44010044 0-13.08673737-13.08673737-16.35842133-26.17347325-16.35842136h-32.7168412c-13.08673737 0-22.90178928 13.08673737-19.63010532 26.17347327 29.44515724 137.41073571 88.33547317 268.27810202 176.67094488 379.51536445 9.81505191 9.81505191 9.81505191 22.90178928 0 29.44515724-94.87884111 91.60715713-212.65947151 157.04083955-343.52683781 179.94262885-13.08673737 0-16.35842133 13.08673737-16.35842136 22.9017893v32.71684266c0 13.08673737 13.08673737 22.90178928 26.17347326 22.90178929 147.22578764-26.17347327 284.63652335-94.87884111 392.60210184-202.8444196 6.54336796-9.81505191 19.63010531-9.81505191 29.44515723 0 94.87884111 91.60715713 209.38778755 160.312525 333.71178442 199.57273415 9.81505191 3.27168397 19.63010531 0 26.17347472-9.8150519v-3.27168399l9.81505192-32.7168412c3.27168397-9.81505191-3.27168397-22.90178928-13.08673735-26.17347325-114.50894643-35.98852518-219.20283948-98.1505251-304.26662719-179.94263031-9.81505191-9.81505191-9.81505191-22.90178928 0-29.44515725 127.59568233-153.76915557 206.1161021-336.98346986 219.20283947-533.28452003z m379.51536446-75.24873583h-32.71684268c-9.81505191 0-19.63010531 6.54336796-22.90178929 19.63010532v121.05231437c0 9.81505191-6.54336796 19.63010531-19.63010531 22.90178929h-81.79210375c-9.81505191 0-19.63010531 6.54336796-19.63010531 19.63010385v39.26021062c0 13.08673737 6.54336796 19.63010531 19.63010531 22.9017893h78.52041978c9.81505191 0 19.63010531 6.54336796 19.63010531 19.6301053v170.12757692c0 9.81505191-6.54336796 19.63010531-19.63010531 22.9017893h-81.79210376c-9.81505191 0-19.63010531 6.54336796-19.63010531 19.6301053v42.53189311c0 13.08673737 6.54336796 19.63010531 19.63010531 22.90178929h78.52041978c9.81505191 0 19.63010531 6.54336796 19.63010531 19.63010531v166.85589296c0 35.98852518-13.08673737 94.87884111-104.69389303 98.15052508-9.81505191 0-19.63010531 6.54336796-19.6301053 19.63010531v35.98852517c0 13.08673737 13.08673737 22.90178928 26.17347324 22.9017893 88.33547317-9.81505191 179.94262883-55.6186305 179.94262886-176.67094486v-163.58420898c0-9.81505191 6.54336796-19.63010531 19.6301053-19.63010531h71.97705184c13.08673737 0 19.63010531-9.81505191 19.6301053-19.63010385v-35.98852664c0-9.81505191-6.54336796-19.63010531-19.6301053-19.63010531h-65.43368391c-9.81505191 0-19.63010531-6.54336796-19.63010381-19.63010532V346.77994906c0-9.81505191 6.54336796-19.63010531 19.63010381-19.63010533h71.97705183c9.81505191 0 19.63010531-6.54336796 19.63010532-19.63010384v-35.98852667c0-9.81505191-6.54336796-19.63010531-19.63010532-22.90178926H2855.19735921c-9.81505191 0-19.63010531-6.54336796-19.63010381-19.63010533v-121.05231437c-3.27168397-26.17347327-13.08673737-35.98852518-26.17347327-35.98852519z m179.94262883 870.26798992c0 9.81505191 6.54336796 19.63010531 19.63010531 22.90178929h251.91968067c107.96557701 3.27168397 196.30105018-81.79210375 199.57273416-189.75768224v-523.46946813c0-9.81505191-6.54336796-19.63010531-19.63010532-19.63010381h-428.59062553c-9.81505191 0-19.63010531 6.54336796-19.63010531 19.63010381v3.27168399l-3.27168398 687.05367709z m268.27810201-55.61863196H3084.21525207c-13.08673737 0-19.63010531-6.54336796-22.90178927-19.63010385v-238.83294476c0-13.08673737 9.81505191-19.63010531 19.63010531-19.63010532h274.82146996c9.81505191 0 19.63010531 6.54336796 22.90178927 19.63010532v150.49747159c0 62.16199991-55.6186305 111.23726246-121.05231437 107.96557702 3.27168397 0 0 0 0 0z m121.05231437-559.4579933V510.36415802c0 9.81505191-6.54336796 19.63010531-19.6301053 22.90178928H3084.21525207c-13.08673737 0-19.63010531-6.54336796-22.90178927-19.63010532v-183.2143128c0-13.08673737 6.54336796-19.63010531 19.63010531-22.90178929h274.82146996c13.08673737-3.27168397 22.90178928 6.54336796 22.90178927 19.63010384 0-3.27168397 0 0 0 0z m-52.34694653-255.19136466h-219.20283944c-9.81505191 0-19.63010531 6.54336796-19.63010531 19.63010532v39.26020916c0 9.81505191 6.54336796 19.63010531 19.63010531 19.6301053h222.47452343c9.81505191 0 19.63010531-9.81505191 19.63010532-19.6301053v-35.98852518c0-9.81505191-9.81505191-19.63010531-22.90178931-22.9017893 3.27168397 0 0 0 0 0z m840.82283123 35.98852519h-454.7640988c-9.81505191 0-19.63010531 6.54336796-22.90178929 16.35842135v39.26021062c0 9.81505191 6.54336796 19.63010531 19.63010383 22.90178928h458.03578426c9.81505191 0 19.63010531-6.54336796 19.6301053-19.63010531v-35.98852665c3.27168397-9.81505191-3.27168397-19.63010531-13.0867359-22.90178929h-6.5433694z m-193.02936622 392.60210184h317.35336456c9.81505191 0 19.63010531-6.54336796 19.63010531-19.63010532V444.93047413c0-9.81505191-6.54336796-19.63010531-19.63010531-19.6301053h-706.68378093c-9.81505191 0-19.63010531 6.54336796-19.63010385 19.6301053v35.98852665c0 9.81505191 6.54336796 19.63010531 19.63010385 19.63010532h222.4745249c13.08673737 0 22.90178928 9.81505191 22.9017878 19.63010383 0 6.54336796 0 9.81505191-6.54336793 16.35842133l-147.22578764 261.73473406c-3.27168397 3.27168397-6.54336796 9.81505191-9.81505192 16.35841987-13.08673737 35.98852518-6.54336796 75.2487358 16.35841988 104.69389451 22.90178928 35.98852518 62.16199991 55.6186305 104.6938945 52.34694653h395.87378433c16.35842133 0 35.98852518-9.81505191 42.53189459-26.17347327 6.54336796-16.35842133 9.81505191-32.71684119 3.27168398-45.80357857l-91.60715714-186.48599826c-3.27168397-9.81505191-13.08673737-16.35842133-22.9017893-13.08673588-3.27168397 0-6.54336796 3.27168397-6.54336793 3.27168396l-29.44515725 16.35842134c-9.81505191 3.27168397-16.35842133 13.08673737-13.08673735 22.90178782 0 3.27168397 3.27168397 6.54336796 3.27168398 9.81505341l55.61863197 104.69389302c9.81505191 13.08673737-3.27168397 29.44515724-22.90178931 29.44515723h-317.35336454c-16.35842133 0-29.44515724-6.54336796-39.26021063-16.35841987-6.54336796-9.81505191-6.54336796-19.63010531-3.27168397-29.44515725 0-3.27168397 0-3.27168397 3.27168397-3.27168542l176.67094487-307.53831115c13.08673737-19.63010531 32.71684119-29.44515724 52.34694651-29.44515724z" fill="#00a0ff" p-id="1937"></path></svg> </a>提供 CDN 加速 / 云存储服务</span> 
   </div>
@@ -345,8 +373,8 @@ cssUrl: 'https://cdn.staticaly.com/gh/spaceskynet/Artitalk/master/dist/css/artit
 </footer>
 
 
-  <!-- SCRIPTS -->
-  
+<!-- SCRIPTS -->
+
   <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
 
@@ -460,6 +488,28 @@ cssUrl: 'https://cdn.staticaly.com/gh/spaceskynet/Artitalk/master/dist/css/artit
 <!-- 主题的启动项 保持在最底部 -->
 <script  src="/js/boot.js" ></script>
 
+<script>
+    var endLoading = function () {
+      document.body.style.overflow = 'auto';
+      document.getElementById('loading-box').classList.add("loaded");
+    }
+    window.addEventListener('load',endLoading);
+</script>
+<!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="http://yoursite.com/categories/诗/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 诗 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="http://yoursite.com/categories/Echarts/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎮 Echarts (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="http://yoursite.com/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: #b30070}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
 
-</body>
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><!-- hexo injector body_end end --></body>
 </html>
+
