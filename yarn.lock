@@ -1052,6 +1052,11 @@
   dependencies:
     "nanocolors" "^0.2.12"
 
+"hexo-magnet@^1.0.9":
+  "integrity" "sha512-1bh6ZxwcZ4LgM8CkjRqimgke3yKsk2Jb49LBJ3Hc5RtPEzgxle1UHCNLOm7q80FDGRS33Zn6As2t39N8onFnnw=="
+  "resolved" "https://mirrors.tencent.com/npm/hexo-magnet/-/hexo-magnet-1.0.9.tgz"
+  "version" "1.0.9"
+
 "hexo-pagination@1.0.0":
   "integrity" "sha512-miEVFgxchPr2qNWxw0JWpJ9R/Yaf7HjHBZVjvCCcqfbsLyYtCvIfJDxcEwz1sDOC/fLzYPqNnhUI73uNxBHRSA=="
   "resolved" "http://mirrors.tencent.com/npm/hexo-pagination/-/hexo-pagination-1.0.0.tgz"

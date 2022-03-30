@@ -1015,3 +1015,27 @@ static_prefix:
   hint: https://cdn.jsdelivr.net/npm/hint.css@2/
 
 
+magnet:
+  enable: true
+  priority: 1
+  enable_page: /
+  type: categories
+  devide: 2
+  display:
+    - name: 诗
+      display_name: 诗
+      icon: 📚
+    - name: Echarts
+      display_name: Echarts
+      icon: 🎮
+  color_setting:
+    text_color: black
+    text_hover_color: white
+    background_color: "#f2f2f2"
+    background_hover_color: "#b30070"
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
+  temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
+  plus_style: ""
