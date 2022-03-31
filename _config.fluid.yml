@@ -1021,6 +1021,12 @@ links:
       link: "https://www.brealid.cn/",
       avatar: "https://s1.328888.xyz/2022/03/30/JNMEm.jpg"
     }
+    - {
+      title: "Sirius",
+      intro: "lsy‘s Blog",
+      link: "https://sea-ustc.github.io/",
+      avatar: "https://s1.328888.xyz/2022/03/31/JBB6Z.jpg"
+    }
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
   onerror_avatar: /img/avatar.png
