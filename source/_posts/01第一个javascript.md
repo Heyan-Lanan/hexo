@@ -137,6 +137,7 @@ index_img: /img/index.jpg
 <div>绿叶学习网</div>
 <div class="test">绿叶学习网</div>
 ```
+
 也可以使用`document.querySelectorAll`获取特定ClassName的元素
 
 <br>
