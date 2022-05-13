@@ -8,6 +8,7 @@ index_img: /img/index.jpg
 
 ## JavaScript 32-4 笔记
 
+<br>
 ```html
 <script>
     window.onload = function () {
@@ -20,6 +21,9 @@ index_img: /img/index.jpg
 
 通过`document.getElementById("div1")`为html中的`div`注入样式。
 
+
+
+<br>
 ```html
 <script>
     window.onload = function () {
@@ -41,6 +45,7 @@ index_img: /img/index.jpg
 通过`document.getElementById("list")`获取`ul`，再通过`getElementsByTagName("li")`获取标签`li`元素列表，`oLi[2].style.color`即可
 选择第二个`li`标签。
 
+<br>
 ```html
 <script>
     window.onload = function () {
@@ -66,6 +71,8 @@ index_img: /img/index.jpg
 
 `oLi[i].innerHTML`即可为标签注入html代码
 
+
+<br>
 ```html
 <script>
     window.onload = function () {
@@ -81,6 +88,7 @@ index_img: /img/index.jpg
 
    `oBtn[0].onclick`是点击后触发，`alert`是简单的浏览器弹窗，`oBtn.length`是元素个数
 
+<br>
 ```html
 <script>
     window.onload = function () {
@@ -96,6 +104,7 @@ index_img: /img/index.jpg
 
 也可以通过`document.getElementById`来获取单个按钮。
 
+<br>
 ```html
 <script>
     window.onload = function () {
@@ -111,8 +120,10 @@ index_img: /img/index.jpg
     <li class="select">Vue.js</li>
 </ul>
 ```
+
 利用`document.getElementsByClassName`获取特定ClassName的元素
 
+<br>
 ```html
 <script>
     window.onload = function () {
@@ -128,6 +139,7 @@ index_img: /img/index.jpg
 ```
 也可以使用`document.querySelectorAll`获取特定ClassName的元素
 
+<br>
 ```html
 <script>
     window.onload = function () {
@@ -143,8 +155,10 @@ index_img: /img/index.jpg
     <li>Vue.js</li>
 </ul>
 ```
+
 `document.querySelector`获取`id="list"`中第三个`li`
 
+<br>
 ```html
 <script>
     window.onload = function () {
@@ -157,8 +171,11 @@ index_img: /img/index.jpg
 <label><input type="radio" name="status" value="硕士" />硕士</label>
 <label><input type="radio" name="status" value="博士" />博士</label>
 ```
+
 `document.getElementsByName`获取普通的`name="status"`元素，`oInput[2].checked`将第二个元素打勾
 
+
+<br>
 ```html
 <script>
     window.onload = function () {
