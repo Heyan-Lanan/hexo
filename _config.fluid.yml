@@ -56,9 +56,9 @@ code:
     highlightjs:
       # 在链接中挑选 style 填入
       # Select a style in the link
-      #  Github Gist
+      #  Github Gist, Atom One Dark,Gradient Dark
       # See: https://highlightjs.org/static/demo/
-      style: "rainbow"
+      style: "Atom One Dark"
 
       # 是否根据 style 改变代码背景色（如果 style 是深色背景别忘了开启此项）
       # If true, the code background will change color based on the style (If style has a dark background, don't forget to true)
@@ -532,7 +532,7 @@ index:
 #---------------------------
 post:
   banner_img: /img/index.jpg
-  banner_img_height: 70
+  banner_img_height: 100
   banner_mask_alpha: 0.3
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片

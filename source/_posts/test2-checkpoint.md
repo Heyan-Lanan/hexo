@@ -5,7 +5,7 @@ comment: 'waline'
 index_img: /img/index.jpg
 ---
 
-
+<br>
 ```python
 import numpy as np
 np.version.version  # check the version of NumPy
